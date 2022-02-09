@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    background-color: darkblue;
+}
+
+.mid{
+
+}
+
+.blocks{
+
+}
+
+.bottom{
+
+}
