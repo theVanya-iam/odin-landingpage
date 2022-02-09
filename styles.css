@@ -2,9 +2,30 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+/*  TOP controls the whole top part of the page. Consists of Header & Intro w/pic   */
 .top{
-    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+    text-decoration: none;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 6em;
+}
+
+button{
+    display: flex;
+}
+
+.placeholder{
+    width: 800px;
+    height: 200px;
 }
 
 .mid{
