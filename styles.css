@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    color: white;
+    color: #f9faf8;
     text-decoration: none;
 }
 
@@ -16,26 +16,50 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 6em;
+    margin: 100px;
+}
+
+.text{
+    margin: 40px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
 }
 
 button{
     display: flex;
+    background-color: #3882F6;
+    color: #f9faf8;
+    border:0;
+    padding: 15px;
+    width: 120px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 18px;
+    
 }
 
 .placeholder{
-    width: 800px;
+    min-width: 400px;
     height: 200px;
+    flex-shrink: 0;
 }
 
 .mid{
-
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .blocks{
-
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .bottom{
-
+    padding-left: 40px;
+    padding-right: 40px;
 }
