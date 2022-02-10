@@ -1,6 +1,33 @@
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin: 0;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+a{
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 12px;
+}
+
+p{
+    color: #e5e7eb;
+}
+
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 /*  TOP controls the whole top part of the page. Consists of Header & Intro w/pic   */
 .top{
@@ -8,25 +35,23 @@ body{
     flex-direction: column;
     background-color: #1F2937;
     color: #f9faf8;
-    text-decoration: none;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .intro{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
     align-items: center;
-    margin: 100px;
-}
-
-.text{
-    margin: 40px;
-}
-
-h1{
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
 }
 
 button{
@@ -40,18 +65,39 @@ button{
     font-weight: bold;
     font-size: 15px;
     border-radius: 18px;
-    
 }
 
 .placeholder{
-    min-width: 400px;
-    height: 200px;
-    flex-shrink: 0;
+  display: flex;
+  flex-grow: 1;
+  width: 200px;
 }
 
+.placeholder2{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    font-size: 18px;
+    color: #1F2937
+}
+/* note for self:
+remake the layout for picture and text underneath. using "ul" is unnecessary and 
+it will be more practical to utilize more containers instead and organize things
+manually in HTML first. (see exercise 4 from FLEX for examples)*/
 .mid{
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 40px;
     padding-right: 40px;
+    justify-content: center;
 }
 
 .blocks{
