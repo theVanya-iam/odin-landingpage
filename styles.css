@@ -7,6 +7,11 @@ h1{
 
 h2{
     font-size: 24px;
+    margin: 0;
+}
+
+p{
+    margin: 0;
 }
 
 .headline{
@@ -70,12 +75,12 @@ button{
     background-color: #3882F6;
     color: #f9faf8;
     border:0;
-    padding: 15px;
+    padding: 8px;
     width: 120px;
     justify-content: center;
     font-weight: bold;
     font-size: 15px;
-    border-radius: 18px;
+    border-radius: 12px;
 }
 
 .placeholder{
@@ -120,17 +125,11 @@ button{
     height: 200px;
     align-items: center;
     margin: 15px;
+    border: solid #3882F6;
+    padding: 0;
+    border-width: 1px;
+    border-radius: 12px;
 }
-
-
-.bottom{
-    padding-left: 40px;
-    padding-right: 40px;
-
-    background-color: green;
-}
-
-
 
 .quote_area{
     display: flex;
@@ -156,3 +155,38 @@ button{
     font-weight: bold;
     justify-content: flex-end;
 }
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.call_to_action{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #3882F6;
+   color: #e5e7eb;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 200px;
+   margin-right: 200px;
+   padding: 25px;
+   border-radius: 5px;
+}
+
+.footer_button{
+    border: solid #e5e7eb;
+    border-width: 1px;
+    border-radius: 12px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color:  #e5e7eb;
+    padding: 30px;
+    margin: 0;
+}
+
