@@ -9,7 +9,7 @@ h2{
     font-size: 24px;
 }
 
-h3{
+.headline{
     font-size: 32px;
 }
 
@@ -20,8 +20,10 @@ a{
     margin: 12px;
 }
 
-p{
+.text{
+    display: flex;
     color: #e5e7eb;
+    font-size: 18px;
 }
 
 body{
@@ -39,6 +41,15 @@ body{
     padding-right: 120px;
     
 }
+
+.intro_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+}
+
 
 .header{
     display: flex;
@@ -70,42 +81,78 @@ button{
 .placeholder{
   display: flex;
   flex-grow: 1;
-  width: 200px;
+  width: 500px;
+  height: 100px;
 }
 
 .placeholder2{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     margin: 15px;
 }
 
-ul{
-    display: flex;
-}
-
-li{
-    list-style: none;
-    font-size: 18px;
+.headline{
+    font-size: 36px;
+    font-weight: bolder;
     color: #1F2937
 }
-/* note for self:
-remake the layout for picture and text underneath. using "ul" is unnecessary and 
-it will be more practical to utilize more containers instead and organize things
-manually in HTML first. (see exercise 4 from FLEX for examples)*/
-.mid{
+
+.signed_pics{
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
     justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.blocks{
-    padding-left: 40px;
-    padding-right: 40px;
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-bottom: 100px;
 }
+
+.pic{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: 15px;
+}
+
 
 .bottom{
     padding-left: 40px;
     padding-right: 40px;
+
+    background-color: green;
+}
+
+
+
+.quote_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 150px;
+}
+
+.quote_text{
+    display: flex;
+    align-self: center;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 15px;
+    width: 800px;
+}
+
+.quote_author{
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: flex-end;
 }
