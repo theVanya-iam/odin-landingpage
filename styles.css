@@ -1,42 +1,16 @@
-h1{
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-    margin: 0;
-}
-
-h2{
-    font-size: 24px;
-    margin: 0;
-}
-
-p{
-    margin: 0;
-}
-
-.headline{
-    font-size: 32px;
-}
-
-a{
-    color: #e5e7eb;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 12px;
-}
-
-.text{
-    display: flex;
-    color: #e5e7eb;
-    font-size: 18px;
-}
+/*  High hierarchy controls of 4 sections of the page: 
+    TOP
+    MID
+    Quote Area
+    Bottom  
+*/
 
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-/*  TOP controls the whole top part of the page. Consists of Header & Intro w/pic   */
+
 .top{
     display: flex;
     flex-direction: column;
@@ -44,22 +18,39 @@ body{
     color: #f9faf8;
     padding-left: 120px;
     padding-right: 120px;
+    margin: 0;
     
 }
 
-.intro_left{
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-bottom: 100px;
+}
+
+.quote_area{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
-    gap: 20px;
+    background-color: #e5e7eb;
+    padding: 150px;
 }
 
+.bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+/*  TOP section classes controls below: */
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px;
 }
 
 .intro{
@@ -68,33 +59,16 @@ body{
     margin-top: 100px;
     margin-bottom: 100px;
     align-items: center;
+    margin: 0;
 }
-
-button{
-    display: flex;
-    background-color: #3882F6;
-    color: #f9faf8;
-    border:0;
-    padding: 8px;
-    width: 120px;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 12px;
-}
-
 .placeholder{
-  display: flex;
-  flex-grow: 1;
-  width: 500px;
-  height: 100px;
-}
-
-.placeholder2{
-    width: 150px;
-    height: 150px;
-    margin: 15px;
-}
+    display: flex;
+    flex-grow: 0;
+    width: 700px;
+    height: 400px;
+    margin: 50px
+  }
+/*  MID section classes controls below: */
 
 .headline{
     font-size: 36px;
@@ -107,15 +81,6 @@ button{
     justify-content: center;
     align-items: center;
     margin: 20px;
-}
-
-.mid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    padding-bottom: 100px;
 }
 
 .pic{
@@ -131,13 +96,26 @@ button{
     border-radius: 12px;
 }
 
-.quote_area{
+.intro_left{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #e5e7eb;
-    padding: 150px;
+    padding: 15px;
+    gap: 20px;
 }
+
+.text{
+    display: flex;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.placeholder2{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+/*  Quote Area section classes controls below:   */
 
 .quote_text{
     display: flex;
@@ -155,27 +133,27 @@ button{
     font-weight: bold;
     justify-content: flex-end;
 }
-
-.bottom{
-    display: flex;
-    flex-direction: column;
-}
+/*  Bottom section classes controls below:  */
 
 .call_to_action{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   background-color: #3882F6;
-   color: #e5e7eb;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   margin-left: 200px;
-   margin-right: 200px;
-   padding: 25px;
-   border-radius: 5px;
-}
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    color: #e5e7eb;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 25px;
+    border-radius: 5px;
+ }
 
-.footer_button{
+ .box{
+
+ }
+
+ .footer_button{
     border: solid #e5e7eb;
     border-width: 1px;
     border-radius: 12px;
@@ -189,4 +167,40 @@ button{
     padding: 30px;
     margin: 0;
 }
+/*  general (classless) tags below  */
 
+h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin: 0;
+}
+
+h2{
+    font-size: 24px;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 12px;
+}
+
+button{
+    display: flex;
+    background-color: #3882F6;
+    color: #f9faf8;
+    border:0;
+    padding: 8px;
+    width: 120px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 12px;
+}
