@@ -16,8 +16,8 @@ body{
     flex-direction: column;
     background-color: #1F2937;
     color: #f9faf8;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 250px;
+    padding-right: 250px;
     margin: 0;
     
 }
@@ -36,7 +36,10 @@ body{
     flex-direction: column;
     justify-content: center;
     background-color: #e5e7eb;
-    padding: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .bottom{
@@ -62,15 +65,18 @@ body{
     margin-bottom: 100px;
 }
 
+.intro_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
 .placeholder{
     width: 700px;
     height: 400px;
     padding: 15px;
-    flex-shrink: 1;
-  }
-
-  .links{
-
   }
 /*  MID section classes controls below: */
 
@@ -90,52 +96,56 @@ body{
 .pic{
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
     align-items: center;
-    margin: 15px;
-    border: solid #3882F6;
-    padding: 0;
-    border-width: 1px;
-    border-radius: 12px;
-}
-
-.intro_left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
+    width: 180px;
+    height: 300px;
+    margin: 30px;
 }
 
 .text{
     display: flex;
-    color: #e5e7eb;
+    color: #676767;
     font-size: 18px;
+    text-align: left;
 }
 
 .placeholder2{
-    width: 150px;
+    width: 170px;
     height: 150px;
-    margin: 15px;
+    align-items: center;
+    border: solid #3882F6;
+    padding: 0;
+    margin: 30px;
+    border-width: 1px;
+    border-radius: 12px;
 }
 /*  Quote Area section classes controls below:   */
+
+.quote_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+    color: #1F2937;
+}
 
 .quote_text{
     display: flex;
     align-self: center;
     font-size: 36px;
     font-style: italic;
-    color: #1F2937;
-    margin: 15px;
-    width: 800px;
+    padding: 25px;
 }
 
 .quote_author{
     display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     font-size: 24px;
     font-weight: bold;
-    justify-content: flex-end;
+    color: #1F2937;
 }
 /*  Bottom section classes controls below:  */
 
@@ -147,14 +157,12 @@ body{
     color: #e5e7eb;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
     padding: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: 5px;
- }
-
- .box{
-
  }
 
  .footer_button{
