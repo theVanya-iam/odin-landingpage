@@ -60,24 +60,34 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 100px;
+    align-items: flex-start;
+    margin-top: 60px;
     margin-bottom: 100px;
 }
 
 .intro_left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 20px;
     gap: 20px;
 }
 
 .placeholder{
-    width: 700px;
-    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    width: 550px;
+    height: 300px;
     padding: 15px;
   }
+
+  .text{
+    display: flex;
+    color: #676767;
+    font-size: 25px;
+    text-align: left;
+}
 /*  MID section classes controls below: */
 
 .headline{
@@ -97,16 +107,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 180px;
-    height: 300px;
-    margin: 30px;
+   
 }
 
-.text{
-    display: flex;
-    color: #676767;
-    font-size: 18px;
-    text-align: left;
+.pic .text{
+    text-align: center;
+    width: 200px;
 }
 
 .placeholder2{
@@ -209,8 +215,8 @@ button{
     background-color: #3882F6;
     color: #f9faf8;
     border:0;
-    padding: 8px;
-    width: 120px;
+    padding: 12px;
+    width: 140px;
     justify-content: center;
     font-weight: bold;
     font-size: 15px;
